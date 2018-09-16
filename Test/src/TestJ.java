@@ -51,9 +51,10 @@ public class TestJ extends Tire implements TestInterace1,TestInterface2{
 		
 		
 		 int sum = 0;
-         for (int i = 0, j = 0; i < 5 & j < 5; ++i, j = i + 1)
+         for (int i = 0, j = 0; i < 5 & j < 5; ++i, j = i + 1) {
              sum += i;
-	     System.out.println(sum);
+         }
+	     System.out.println("Sum : "+sum);
 	     
 	     Map<String,Object> map = new HashMap<String,Object>();
 	     map.keySet();

@@ -7,6 +7,7 @@ import java.util.Queue;
 
 public class Topological {
 
+	/* Visit all the nodes in a particular order */
 	public static void main(String[] args) {
 		Map<Node,List<Node>> adjList = new HashMap<Node,List<Node>>();
 

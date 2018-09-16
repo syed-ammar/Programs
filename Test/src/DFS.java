@@ -8,7 +8,7 @@ import java.util.Queue;
 public class DFS {
 
 	static int count = 0;
-	
+	/* Traverse all possible vertices from a given point */
 	public static void main(String[] args) {
 		Map<Node,List<Node>> adjList = new HashMap<Node,List<Node>>();
 
