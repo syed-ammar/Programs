@@ -89,7 +89,7 @@ public class TestEnum {
         
         
         t1.start();
-        t2.join();
+        t1.join();
         t2.start();
         
         

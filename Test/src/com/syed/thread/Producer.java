@@ -15,9 +15,9 @@ public class Producer implements Runnable{
 	public void run() {
 		// TODO Auto-generated method stub
 		int i = 0;
-		/*while(i<5){
+		while(i<5){
 			synchronized (Q) {
-				if(Q.size() > 5){
+				while(Q.size() > 5){
 					try {
 						Q.wait();
 						System.out.println("Waiting for Consumer");
@@ -25,24 +25,24 @@ public class Producer implements Runnable{
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-				}else{
-					Q.add(i);
-					try {
-						Thread.sleep(1000);
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					i++;
-					Q.notifyAll();
-					System.out.println(i+ "Added by producer");
 				}
+				Q.add(i);
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				i++;
+				Q.notifyAll();
+				System.out.println(i+ "Added by producer");
+
 			}
-		}*/
-		while(i<5){
-			System.out.println(Q.add(i));
-			i++;
 		}
+		/*while(i<5){
+			System.out.println("Producer + "+Q.add(i));
+			i++;
+		}*/
 	}
 
 }

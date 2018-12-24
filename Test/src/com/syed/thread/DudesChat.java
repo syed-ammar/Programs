@@ -7,7 +7,7 @@ class Dudes{
 		if(flag == 0){
 			flag = id;	
 		}
-		
+		System.out.println("Flag : "+flag);
 		for(int x = 1; x<3 ;x++){
 			if(flag == id){
 				System.out.println("Yo");
