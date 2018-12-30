@@ -37,7 +37,7 @@ public class Subsets {
 		 int n = a.length;
 		 
 	        // Run a loop for printing all 2^n
-	        // subsets one by obe
+	        // subsets one by one
 	        for (int i = 0; i < (1<<n); i++)
 	        {
 	            System.out.print("{ ");
