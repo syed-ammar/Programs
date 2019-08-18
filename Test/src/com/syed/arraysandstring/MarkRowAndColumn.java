@@ -14,7 +14,7 @@ public class MarkRowAndColumn {
 		/*Identify rows and columns that have zeros and nullify those rows and columns later*/
 		boolean[] rowCheck = new boolean[matrix.length];
 		boolean[] colCheck = new boolean[matrix[0].length];
-		
+
 		for(int i=0;i<matrix.length ;i++) {
 			for(int j=0;j<matrix[0].length;j++) {
 				if(matrix[i][j] == 0) {
@@ -56,9 +56,9 @@ public class MarkRowAndColumn {
 		   5 6 7 8 
 		   9 10 11 0 
 		   12 13 14 15 */
-		
-		
-		int matrix[][] = new int[4][4];
+
+
+        int[][] matrix = new int[4][4];
 		int count = 1;
 		System.out.println("Before : ");
 		for(int i=0;i<4;i++) {

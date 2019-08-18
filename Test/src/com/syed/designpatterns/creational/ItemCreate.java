@@ -3,8 +3,6 @@
  */
 package com.syed.designpatterns.creational;
 
-import com.syed.designpatterns.creational.Item.ItemBuilder;
-
 /**
  * @author sammar
  *

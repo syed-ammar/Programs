@@ -37,16 +37,21 @@ public class CustomThreadPool
             Runnable task;
             //System.out.println("Task before : "+task);
             while (true) {
-                synchronized (queue) {
-                    if (queue.isEmpty()) {
+                synchronized (queue) { 
+                	/*Using "while" instead of "if" is like a double check to prevent exceptions. For example, if two threads
+                	 * are waiting on the queue, say both get notified on the addition of an element, both try to poll on the Q
+                	 * One of them will get it and the other will throw NullPointerException */
+                	
+                    while (queue.isEmpty()) {
                         try {
+                        	System.out.println("Before Waiting for task : "+Thread.currentThread().getName());
                             queue.wait();
-                            System.out.println("Waiting for task : "+Thread.currentThread().getName());
+                            System.out.println("After Waiting for task : "+Thread.currentThread().getName());
                         } catch (InterruptedException e) {
                             System.out.println("An error occurred while queue is waiting: " + e.getMessage());
                         }
                     }
-                    task = (Runnable) queue.poll();
+                    task = queue.poll();
                     try {
                     	//System.out.println("Task after : "+task);
                         task.run();
