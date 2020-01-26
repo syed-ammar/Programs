@@ -14,9 +14,9 @@ public class FindWorkInMatrix {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		char[][] arr = {{'F', 'A', 'C', 'I'},
-				{'O', 'B', 'Q', 'P'},
-				{'A', 'N', 'O', 'B'},
-				{'M', 'A', 'S', 'S'}};
+						{'O', 'B', 'Q', 'P'},
+						{'A', 'N', 'O', 'B'},
+						{'M', 'A', 'S', 'S'}};
 		String word = "FOAM";
 		char[] wordArray = word.toCharArray();
 		System.out.println(findWorkInAMatrix(arr, 4, 4, wordArray));

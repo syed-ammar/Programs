@@ -14,7 +14,7 @@ public class EntryPoint {
 		Producer prod = new Producer(Q);
 		Consumer con = new Consumer(Q);
 		
-		ThreadPoolExecutor ex= (ThreadPoolExecutor) Executors.newFixedThreadPool(2);
+		ThreadPoolExecutor ex= (ThreadPoolExecutor) Executors.newFixedThreadPool(1);
 		/*Thread t1 = new Thread(prod);
 		Thread t2 = new Thread(con);
 		

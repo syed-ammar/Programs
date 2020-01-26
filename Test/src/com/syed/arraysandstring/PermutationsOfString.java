@@ -30,7 +30,7 @@ public class PermutationsOfString {
 		for(int i = start ; i<end ; i++) {
 			str = swap(str,start, i);
 			permute(str, start+1, end);
-			str = swap(str,start, i);
+			//str = swap(str,start, i);
 		}
 	}
 	

@@ -10,7 +10,7 @@ public class Calculate {
 		}
 		@Override
 		public void run() {
-			if(calc.total == 0) {
+			while(calc.total == 0) {
 				synchronized (calc) {
 					try {
 						System.out.println("I am waiting "+Thread.currentThread());
@@ -37,22 +37,22 @@ public static void main(String[] args) throws InterruptedException {
 	Thread t4 = new Thread(calc);
 	
 	//Run the theads in sequence
-	t4.start();
+	/*t4.start();
 	t4.join();
 	t1.start(); //Run after t4 is complete
  	t1.join();
 	t2.start();//Run after t1 is complete
 	t2.join();
 	t3.start();//Run after t2 is complete
-	t3.join();
+	t3.join();*/
 	
 	//Run in random after
 	
-   /* t1.start();
+    t1.start();
 	t2.start();
 	t3.start();
 	t4.start();
-	*/
+	
 	
 	
 }	

@@ -46,7 +46,7 @@ public class Subsets {
 	            for (int j = 0; j < n; j++) {
 	 
 	                // (1<<j) is a number with jth bit 1
-	                // so when we 'and' them with the
+	                // so when we 'AND' them with the
 	                // subset number we get which numbers
 	                // are present in the subset and which
 	                // are not
