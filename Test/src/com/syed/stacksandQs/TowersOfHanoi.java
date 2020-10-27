@@ -3,9 +3,9 @@ package com.syed.stacksandQs;
 public class TowersOfHanoi {
 
     public static void main(String args[]){
-        MyStack source = new MyStack();
-        MyStack dest = new MyStack();
-        MyStack aux = new MyStack();
+        MyStack source = new MyStack(5);
+        MyStack dest = new MyStack(5);
+        MyStack aux = new MyStack(5);
 
         try{
             source.push(3);

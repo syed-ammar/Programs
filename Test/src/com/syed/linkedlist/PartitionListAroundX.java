@@ -35,10 +35,10 @@ public class PartitionListAroundX {
 	}
 
 	private static LinkedNode partitionList(LinkedNode head, LinkedNode xNode) {
-		LinkedNode beforeHead = null;
-		LinkedNode beforeTail = null;
-		LinkedNode afterHead = null;
-		LinkedNode afterTail = null;
+		LinkedNode beforeHead = null; //Head pointer to keep track of Head of list with value > xNode
+		LinkedNode beforeTail = null; //Pointer to keep track of current element in the list with value > xNode
+		LinkedNode afterHead = null; //Head pointer to keep track of Head of list with value < xNode
+		LinkedNode afterTail = null; //Pointer to keep track of current element in the list with value < xNode
 		LinkedNode temp = head;
 
 		while(temp != null ) {

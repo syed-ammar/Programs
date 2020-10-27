@@ -59,6 +59,6 @@ public class SetOfStacks {
     }
 
     private static MyStack createNewStack() {
-        return new MyStack();
+        return new MyStack(5);
     }
 }

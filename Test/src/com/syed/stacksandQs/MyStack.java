@@ -20,6 +20,10 @@ public class MyStack {
         return top;
     }
 
+    public MyStack(int MAX_SIZE) {
+        this.MAX_SIZE = MAX_SIZE;
+    }
+
     @Override
     public String toString() {
         return "MyStack{" +
@@ -52,5 +56,12 @@ public class MyStack {
         data[top] = null;
         top-=1;
         return val;
+    }
+
+    public int peek() throws Exception {
+        if(top == -1){
+            throw new Exception("Stack is empty");
+        }
+        return data[top];
     }
 }
