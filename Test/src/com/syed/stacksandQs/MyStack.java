@@ -42,7 +42,7 @@ public class MyStack {
 
     public void push(int val) throws Exception {
         if(top == MAX_SIZE) {
-            throw new Exception("Stack overflow");
+            throw new Exception("com.syed.stacksandQs.Stack overflow");
         }
         top+=1;
         data[top] = val;
@@ -50,7 +50,7 @@ public class MyStack {
 
     public int pop() throws Exception {
         if(top == -1){
-            throw new Exception("Stack is empty");
+            throw new Exception("com.syed.stacksandQs.Stack is empty");
         }
         int val = data[top];
         data[top] = null;
@@ -60,7 +60,7 @@ public class MyStack {
 
     public int peek() throws Exception {
         if(top == -1){
-            throw new Exception("Stack is empty");
+            throw new Exception("com.syed.stacksandQs.Stack is empty");
         }
         return data[top];
     }

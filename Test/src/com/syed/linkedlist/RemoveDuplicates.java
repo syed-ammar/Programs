@@ -20,7 +20,7 @@ public class RemoveDuplicates {
 		LinkedNode node2 = new LinkedNode(2, null);
 		LinkedNode node3 = new LinkedNode(1, null);
 		LinkedNode node4 = new LinkedNode(1, null);
-		LinkedNode node5 = new LinkedNode(3, null);
+		LinkedNode node5 = new LinkedNode(1, null);
 		LinkedNode node6 = new LinkedNode(4, null);
 		LinkedNode node7 = new LinkedNode(3, null);
 		LinkedNode node8 = new LinkedNode(5, null);
@@ -42,11 +42,16 @@ public class RemoveDuplicates {
 		Set<Integer> set = new HashSet<>();
 		set.add(head.getValue());
 		LinkedNode curr = head;
-		while(curr.getNext() != null) {
-			if(set.contains(curr.getNext().getValue())) {
+		while(curr.getNext() != null)
+		{
+			if(set.contains(curr.getNext().getValue()))
+			{
+				//Keep changing the next pointer till we find the unique element
 				curr.setNext(curr.getNext().getNext());
 				//curr =curr.getNext();
-			} else {
+			}
+			else
+			{
 				curr = curr.getNext();
 				set.add(curr.getValue());
 			}

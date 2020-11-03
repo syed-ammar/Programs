@@ -2,7 +2,6 @@ package com.syed.stacksandQs;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class SetOfStacks {
     private static List<MyStack> sos = new ArrayList<MyStack>();
@@ -49,7 +48,7 @@ public class SetOfStacks {
         if(sos.size()>0){
             currStack = sos.get(fromStack);
             if(currStack == null || currStack.getTop() == -1){
-                throw new Exception("Invalid stack or Stack is empty");
+                throw new Exception("Invalid stack or com.syed.stacksandQs.Stack is empty");
             }
             poppedValue = currStack.getData()[currStack.getTop()];
             currStack.getData()[currStack.getTop()] = null;
@@ -61,4 +60,5 @@ public class SetOfStacks {
     private static MyStack createNewStack() {
         return new MyStack(5);
     }
+
 }

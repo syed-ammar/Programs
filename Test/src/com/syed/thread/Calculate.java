@@ -10,7 +10,8 @@ public class Calculate {
 		}
 		@Override
 		public void run() {
-			while(calc.total == 0) {
+			System.out.println("I am starting  "+Thread.currentThread());
+			if(calc.total == 0) {
 				synchronized (calc) {
 					try {
 						System.out.println("I am waiting "+Thread.currentThread());
@@ -51,6 +52,7 @@ public static void main(String[] args) throws InterruptedException {
     t1.start();
 	t2.start();
 	t3.start();
+	Thread.sleep(10000);
 	t4.start();
 	
 	

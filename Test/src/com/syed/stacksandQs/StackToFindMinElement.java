@@ -26,7 +26,7 @@ public class StackToFindMinElement {
 
     private void push(int value) throws Exception {
         if(top == 10) {
-            throw new Exception("Stack is full");
+            throw new Exception("com.syed.stacksandQs.Stack is full");
         }
 
         if(topForMin == -1 || value < min()){
@@ -37,7 +37,7 @@ public class StackToFindMinElement {
 
     private int pop() throws Exception {
         if(top == -1){
-            throw new Exception("Stack is empty");
+            throw new Exception("com.syed.stacksandQs.Stack is empty");
         }
         int poppedValue = stack[top--];
         if(poppedValue == stackWithMinElements[topForMin])
@@ -49,7 +49,7 @@ public class StackToFindMinElement {
 
     private int min() throws Exception {
         if(topForMin == -1){
-            throw new Exception("Stack is empty");
+            throw new Exception("com.syed.stacksandQs.Stack is empty");
         }
         return stackWithMinElements[topForMin];
     }

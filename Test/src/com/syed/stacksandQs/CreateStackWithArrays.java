@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CreateStackWithArrays
 {
-    private static Integer[] sp = {-1, -1, -1}; // Stack pointers
+    private static Integer[] sp = {-1, -1, -1}; // com.syed.stacksandQs.Stack pointers
 
     private static Integer[] ss; // Size of each stack
 
@@ -32,7 +32,7 @@ public class CreateStackWithArrays
     {
         if(stackNum > ss.length)
         {
-            System.out.println("Stack not found");
+            System.out.println("com.syed.stacksandQs.Stack not found");
             return;
         }
 
@@ -47,7 +47,7 @@ public class CreateStackWithArrays
     private static int findIndex(final int stackNum) throws Exception {
         int totalSize = 0;
         if(sp[stackNum] >= ss[stackNum]-1){
-            throw new Exception("Stack "+stackNum+" is full");
+            throw new Exception("com.syed.stacksandQs.Stack "+stackNum+" is full");
         }
         totalSize = findBaseIndexOfCurrStack(stackNum);
 
@@ -61,7 +61,7 @@ public class CreateStackWithArrays
                     && sp[stackNum +1] < ss[stackNum +1]){
                 shiftAndUpdateNextStack(stackNum+1);
             } else {
-                throw new Exception("Stack is full");
+                throw new Exception("com.syed.stacksandQs.Stack is full");
             }
         }
 
@@ -75,8 +75,8 @@ public class CreateStackWithArrays
         for(int i=base+sp[stackToBeUpdated]+1; i>base ; i--){
             stack[i] = stack[i-1];
         }
-        ss[stackToBeUpdated]--;
-        ss[stackToBeUpdated-1]++;
+        ss[stackToBeUpdated]--; //Decrement size of the next stack
+        ss[stackToBeUpdated-1]++; //Increment size of the current stack
     }
 
     private static int findBaseIndexOfCurrStack(final int stackToBeUpdated) {
