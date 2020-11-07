@@ -9,8 +9,8 @@ public class MyStack {
         return MAX_SIZE;
     }
 
-    private int MAX_SIZE = 3;
-    private Integer[] data = new Integer[MAX_SIZE];
+    private int MAX_SIZE = 0;
+    private Integer[] data ;
 
     public Integer[] getData() {
         return data;
@@ -22,6 +22,7 @@ public class MyStack {
 
     public MyStack(int MAX_SIZE) {
         this.MAX_SIZE = MAX_SIZE;
+        data = new Integer[MAX_SIZE];
     }
 
     @Override
