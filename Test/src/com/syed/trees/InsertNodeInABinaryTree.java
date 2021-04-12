@@ -10,19 +10,8 @@ public class InsertNodeInABinaryTree
         root.right.left = new Node("15");
         root.right.right = new Node("8");
         insert(root,"12");
-        inorder(root);
+        TreeTraversals.inOrder(root);
 
-    }
-
-    /* Inorder traversal of a binary tree*/
-    static void inorder(Node temp)
-    {
-        if (temp == null)
-            return;
-
-        inorder(temp.left);
-        System.out.print(temp.value + " ");
-        inorder(temp.right);
     }
 
     public static Node insert(Node root, String key)

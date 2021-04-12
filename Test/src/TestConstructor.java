@@ -1,7 +1,7 @@
 
 public class TestConstructor {
 
-	TestConstructor(int i){
+	public TestConstructor(int i){
 		
 	}
 }

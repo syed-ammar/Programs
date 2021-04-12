@@ -1,10 +1,10 @@
 package com.syed.trees;
 
-public class Node
+public class Node<T>
 {
-    String value;
-    Node left, right;
-    Node(String val){
+    T value;
+    public Node<T> left, right;
+    Node(T val){
         this.value = val;
         this.left = null;
         this.right = null;
