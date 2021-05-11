@@ -57,7 +57,7 @@ public class RemoveDuplicates {
 			}
 		}
 		
-		System.out.println(head.toString());
+		System.out.println(head);
 		while(head.getNext() != null) {		
 			head = head.getNext();
 			System.out.println(head.toString());

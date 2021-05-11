@@ -3,7 +3,7 @@ public class Subsets {
 
 	public static void main(String[] args) {
 		
-		int a[] = {1,2,3,4};
+		int[] a = {1,2,3,4};
 		
 		//Method 1 :
 		/*int noOfSubsets = 1<<a.length;

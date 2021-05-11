@@ -3,7 +3,7 @@ public class QuickSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a[] = {22,2,3,10,4};
+		int[] a = {22,2,3,10,4};
 		System.out.println("Before Sorting");
 		
 		for(int i = 0; i<a.length ;i++){
@@ -22,7 +22,7 @@ public class QuickSort {
 		}
 	}
 
-	public static void quickSort(int a[], int left, int right){
+	public static void quickSort(int[] a, int left, int right){
 		int s;
 		if(left < right){
 			
@@ -33,7 +33,7 @@ public class QuickSort {
 		}
 	}
 	
-	public static int partition(int a[], int left, int right){
+	public static int partition(int[] a, int left, int right){
 		int pivot = a[left];
 		int temp;
 		

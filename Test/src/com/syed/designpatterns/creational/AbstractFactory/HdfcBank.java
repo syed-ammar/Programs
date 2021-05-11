@@ -9,7 +9,7 @@ package com.syed.designpatterns.creational.AbstractFactory;
  */
 public class HdfcBank implements Bank{
 
-	private String bankName;
+	private final String bankName;
 	
 	public HdfcBank() {
 		this.bankName = "HDFC"; 

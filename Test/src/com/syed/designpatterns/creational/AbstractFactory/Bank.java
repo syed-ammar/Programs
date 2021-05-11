@@ -9,5 +9,5 @@ package com.syed.designpatterns.creational.AbstractFactory;
  */
 public interface Bank {
 
-	public String getBank();
+	String getBank();
 }

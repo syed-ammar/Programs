@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public class CellFactory {
 
-	private static Map<String, TemplateCell> cellMap = new HashMap<String, TemplateCell>();	
+	private static final Map<String, TemplateCell> cellMap = new HashMap<String, TemplateCell>();
 	
 	public static TemplateCell getInstance(String color) throws CloneNotSupportedException {
 		TemplateCell cell = null;

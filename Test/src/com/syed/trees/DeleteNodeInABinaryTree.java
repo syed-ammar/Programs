@@ -15,7 +15,7 @@ public class DeleteNodeInABinaryTree
         root.right.left = new Node("15");
         root.right.right = new Node("8");
         inorder(root);
-        System.out.println("");
+        System.out.println();
         delete(root,"12");
         inorder(root);
     }

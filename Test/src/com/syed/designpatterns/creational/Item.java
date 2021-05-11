@@ -21,7 +21,7 @@ public class Item {
 	}
 
 	public static class ItemBuilder{
-		private Item item = new Item();
+		private final Item item = new Item();
 		
 		public ItemBuilder setItemName(String name) {
 			item.itemName = name;

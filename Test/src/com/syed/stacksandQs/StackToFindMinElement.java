@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class StackToFindMinElement {
 
-    private Integer stack[] = new Integer[10];
+    private final Integer[] stack = new Integer[10];
     private int top = -1;
     private int topForMin = -1;
-    private Integer stackWithMinElements[] = new Integer[10];
+    private final Integer[] stackWithMinElements = new Integer[10];
 
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         StackToFindMinElement minStack = new StackToFindMinElement();
         try {

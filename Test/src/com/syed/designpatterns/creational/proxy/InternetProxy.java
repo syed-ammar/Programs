@@ -12,9 +12,9 @@ import java.util.List;
  */
 public class InternetProxy implements Internet {
 	
-	private Internet internet;
+	private final Internet internet;
 	
-	private static List<String> webSiteList = new ArrayList<String>();
+	private static final List<String> webSiteList = new ArrayList<String>();
 	public InternetProxy() {
 		internet = new InternetMain();
 	}

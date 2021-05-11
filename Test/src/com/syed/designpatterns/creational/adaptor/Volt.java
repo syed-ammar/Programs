@@ -9,7 +9,7 @@ package com.syed.designpatterns.creational.adaptor;
  */
 public class Volt {
 
-	private int voltage;
+	private final int voltage;
 
 	public Volt(int voltage) {
 		super();

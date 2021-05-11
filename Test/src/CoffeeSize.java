@@ -5,7 +5,7 @@ public enum CoffeeSize {
 	
 	private int ounces;
 	
-	private CoffeeSize(int ounces) {
+	CoffeeSize(int ounces) {
 		this.ounces = ounces;
 	}
 

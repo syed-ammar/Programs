@@ -2,7 +2,7 @@
 public class BinarySearch {
 
 	public static void main(String[] args) {
-		int a[] = {1,2,3,4,5,6};
+		int[] a = {1,2,3,4,5,6};
 		
 		int index = binarySearch(a, 1, 0, a.length-1);
 		
@@ -10,7 +10,7 @@ public class BinarySearch {
 
 	}
 
-	public static int binarySearch(int a[],int elem,int low, int high){
+	public static int binarySearch(int[] a, int elem, int low, int high){
 		
 		int mid = (low + high)/2;
 		

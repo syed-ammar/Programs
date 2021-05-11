@@ -16,12 +16,9 @@ public class CheckIfStrIsPermutOfOther {
 		char[] c2 = s2.toCharArray();
 		Arrays.sort(c1);
 		Arrays.sort(c2);
-		
-		if(String.valueOf(c1).equalsIgnoreCase(String.valueOf(c2))) {
-			return true;
-		}
-		return false;
-	}
+
+        return String.valueOf(c1).equalsIgnoreCase(String.valueOf(c2));
+    }
 	/**
 	 * @param args
 	 */

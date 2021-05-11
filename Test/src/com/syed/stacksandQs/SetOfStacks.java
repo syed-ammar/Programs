@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SetOfStacks {
-    private static List<MyStack> sos = new ArrayList<MyStack>();
+    private static final List<MyStack> sos = new ArrayList<MyStack>();
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         push(10);
         push(5);
         push(6);

@@ -5,7 +5,7 @@ public class MergeSort {
 
 	public static void main(String[] args) {
 		
-		int a[] = {22,2,3,10,4};
+		int[] a = {22,2,3,10,4};
 		System.out.println("Before Sorting");
 		
 		for(int i = 0; i<a.length ;i++){
@@ -24,9 +24,9 @@ public class MergeSort {
 		}
 	}
 	
-	public static void mergeSort(int a[]){
+	public static void mergeSort(int[] a){
 		int size = a.length;
-		int c[],d[];
+		int[] c,d;
 		if(size > 1){
 			c = Arrays.copyOfRange(a, 0, (size/2));
 			d = Arrays.copyOfRange(a, size/2, size);
@@ -63,7 +63,7 @@ public class MergeSort {
 		}
 	}
 
-	public static void copy(int to[], int from[], int fromIndex, int mainIndex){
+	public static void copy(int[] to, int[] from, int fromIndex, int mainIndex){
 		
 		for(int i =fromIndex ;i < from.length; i++){
 			to[mainIndex++] = from[i];

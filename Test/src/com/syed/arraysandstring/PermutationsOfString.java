@@ -12,7 +12,7 @@ import java.util.Set;
  */
 public class PermutationsOfString {
 
-	private static Set<String> strSet = new HashSet<String>();
+	private static final Set<String> strSet = new HashSet<String>();
 	
 	public static void permute(String str, int start, int end) {
 		
@@ -35,7 +35,7 @@ public class PermutationsOfString {
 	}
 	
 	private static String swap(String str, int fromIndex, int toIndex) {
-		char a[] = str.toCharArray();
+		char[] a = str.toCharArray();
 		char temp = a[fromIndex];
 		a[fromIndex] = a[toIndex];
 		a[toIndex] = temp;
@@ -43,7 +43,7 @@ public class PermutationsOfString {
 		return String.copyValueOf(a);
 	}
 	
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		String str = "abcd";
 		permute(str, 0, str.length());
 		System.out.println("Size of set : "+strSet.size());

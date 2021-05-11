@@ -2,8 +2,8 @@ package com.syed.stacksandQs;
 
 public class QueueUsingStack
 {
-    private MyStack myStack1 = new MyStack(5);
-    private MyStack myStack2 = new MyStack(5);
+    private final MyStack myStack1 = new MyStack(5);
+    private final MyStack myStack2 = new MyStack(5);
 
     public void add(int val)
     {

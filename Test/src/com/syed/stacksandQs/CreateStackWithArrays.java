@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CreateStackWithArrays
 {
-    private static Integer[] sp = {-1, -1, -1}; // com.syed.stacksandQs.Stack pointers
+    private static final Integer[] sp = {-1, -1, -1}; // com.syed.stacksandQs.Stack pointers
 
     private static Integer[] ss; // Size of each stack
 

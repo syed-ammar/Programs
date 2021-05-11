@@ -2,7 +2,7 @@
 public class InsertionSort {
 
 	public static void main(String[] args) {
-		int a[] = {22,2,3,10,-4};
+		int[] a = {22,2,3,10,-4};
 		System.out.println("Before Sorting");
 		
 		for(int i = 0; i<a.length ;i++){
@@ -21,7 +21,7 @@ public class InsertionSort {
 		}
 	}
 	
-	public static void insertionSort(int a[]){
+	public static void insertionSort(int[] a){
 		
 		int key = 0;
 		int i = 0;

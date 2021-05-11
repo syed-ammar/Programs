@@ -13,7 +13,7 @@ import java.util.List;
 public class BreakStringIntoMultipleText {
 
 	static String temp = "";
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		String mainStr = "the quick brown fox jumps over the lazy elephant135";
 		//String mainStr = "0123456789 1234 12345 12345 12345";
 		int limit = 10;
@@ -44,9 +44,9 @@ public class BreakStringIntoMultipleText {
 			}
 			//currString = tempString;
 		}
-		System.out.println("Final list : "+resultArr.toString());
+		System.out.println("Final list : "+ resultArr);
 		List<String> mainList = Arrays.asList(arr);
-		System.out.println(getStringList(mainList,limit).toString());
+		System.out.println(getStringList(mainList,limit));
 	}
 	
 	public static List<String> getStringList(List<String> mainList, int limit){		

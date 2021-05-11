@@ -8,5 +8,5 @@ package com.syed.designpatterns.creational.adaptor;
  *
  */
 public interface SocketAdaptor {
-	public Volt chargePhone();
+	Volt chargePhone();
 }

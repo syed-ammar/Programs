@@ -9,7 +9,7 @@ package com.syed.designpatterns.creational.AbstractFactory;
  */
 public class TestAbstractFactory {
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		AbstractFactory bankFactory = FactoryCreator.getFactory("bank");
 		Bank bank = bankFactory.getBank("HDFC");
 		

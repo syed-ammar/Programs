@@ -10,15 +10,15 @@ import java.util.Date;
  */
 public class ImmutableClass {
 
-	private String immutProp1;
+	private final String immutProp1;
 	
-	private String immutProp2;
+	private final String immutProp2;
 	
-	private int immutProp3;
+	private final int immutProp3;
 	
-	private Integer immutProp5;
+	private final Integer immutProp5;
 	
-	private Date immutProp4;
+	private final Date immutProp4;
 	
 	private ImmutableClass(String immutProp1, String immutProp2, int immutProp3, Date immutProp4,Integer immutProp5) {
 		this.immutProp1 = immutProp1;

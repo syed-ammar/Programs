@@ -11,7 +11,7 @@ public class ShrinkTheString {
 	private static String shrinkTheString(String source) {
 		int count = 0;
 		StringBuffer sb = new StringBuffer();
-		char s[] = source.toCharArray();
+		char[] s = source.toCharArray();
 		for(int i=0; i<s.length;i++) {
 			if((i+1)<s.length && s[i] == s[i+1]) {
 				count++;

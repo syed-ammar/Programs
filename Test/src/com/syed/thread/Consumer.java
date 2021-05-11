@@ -4,7 +4,7 @@ import java.util.Queue;
 
 public class Consumer implements Runnable{
 
-	private Queue<Integer> Q;
+	private final Queue<Integer> Q;
 
 	public Consumer(Queue<Integer> q) {
 		super();

@@ -60,11 +60,8 @@ public class Node {
 	@Override
 	public boolean equals(Object obj) {
 		Node object = (Node)obj;
-		
-		if(this.value.equals(object.getValue())){
-			return true;
-		}
-		return false;
+
+		return this.value.equals(object.getValue());
 	}
 
 	@Override

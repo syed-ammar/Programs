@@ -28,17 +28,17 @@ public class TestJ extends Tire implements TestInterace1,TestInterface2{
 	 * @param args
 	 * @throws IOException
 	 */
-	private static int no_of_chefs = 0;
-	private static int targetChef = 0;
+	private static final int no_of_chefs = 0;
+	private static final int targetChef = 0;
 	public static void main(String[] args) {
 		String s = "Hello";
 		String s1 = "Hello";
-		String s3 = new String("Hello");
+		String s3 = "Hello";
 		StringBuffer sb1 = new StringBuffer("hi");
 		StringBuffer sb2 = new StringBuffer("hi");
-		Integer a[] = {2,3};
+		Integer[] a = {2,3};
 		
-		new ArrayList<>().iterator();
+		Collections.emptyIterator();
 		System.out.println(s.substring(1));
 		String st = "String:/syed:Ammar";
 		

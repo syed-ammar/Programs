@@ -51,7 +51,7 @@ public class AddNumbersUsingLinkedList {
 		
 		while(newHead != null)
 		{
-			System.out.println(newHead.toString());
+			System.out.println(newHead);
 			newHead = newHead.next;
 			
 		}

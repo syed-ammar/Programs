@@ -9,5 +9,5 @@ package com.syed.designpatterns.creational.proxy;
  */
 public interface Internet {
 
-	public void connect(String website);
+	void connect(String website);
 }
