@@ -6,7 +6,7 @@ import java.util.function.BiConsumer;
  * @author sammar
  *
  */
-public class FindALoopInLinkedList {
+public class  FindALoopInLinkedList {
 
 	private static LinkedNode fast = null;
 	private static LinkedNode slow = null;

@@ -6,7 +6,8 @@
  * @author sammar
  *
  */
-public class FindWorkInMatrix {
+public class FindWordInMatrix
+{
 
 	/**
 	 * @param args
