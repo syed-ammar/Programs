@@ -49,4 +49,14 @@ public class DoublyLinkedNode
     {
         this.keys = keys;
     }
+
+
+    @Override
+    public String toString() {
+        return "DoublyLinkedNode{" +
+                "value='" + value + '\'' +
+                ", frequency=" + frequency +
+                ", keys=" + keys.toString() +
+                '}';
+    }
 }
