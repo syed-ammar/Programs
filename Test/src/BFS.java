@@ -8,7 +8,7 @@ import java.util.Queue;
 
 public class BFS {
 
-	/* BFS is basically is used for traversing all the nodes in a graph from a given source node
+	/* BFS is used for traversing all the nodes in a graph from a given source node
 	 * It used for Web crawling, social networking, find the shortest path
 	 */
 	public static void main(String[] args) {
