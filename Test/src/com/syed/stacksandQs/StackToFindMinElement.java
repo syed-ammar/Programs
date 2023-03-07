@@ -18,6 +18,7 @@ public class StackToFindMinElement {
             minStack.push(6);
             minStack.push(7);
             minStack.push(8);
+            minStack.pop();
             Arrays.stream(minStack.stackWithMinElements).forEach(element -> System.out.println(element));
         } catch (Exception e) {
             e.printStackTrace();

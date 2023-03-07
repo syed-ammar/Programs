@@ -46,7 +46,7 @@ public class Factorial {
 
         /*Store the result in an array, if the result of the multiplication is multiple digits
         * split them and store it in individual index of an array*/
-        
+
         for(int i = 0; i<currSize; i++)
         {
             product = currElement * arr[i] + carry;

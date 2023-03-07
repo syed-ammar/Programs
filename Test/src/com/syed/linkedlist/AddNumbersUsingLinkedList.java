@@ -8,7 +8,7 @@ public class AddNumbersUsingLinkedList {
 	public static void main(String[] args) {
 		LinkedNode node1 = new LinkedNode(1, null);
 		LinkedNode node2 = new LinkedNode(2, null);
-		LinkedNode node3 = new LinkedNode(3, null);
+		LinkedNode node3 = new LinkedNode(4, null);
 		//LinkedNode node4 = new LinkedNode(4, null);
 		LinkedNode node5 = new LinkedNode(5, null);
 		LinkedNode node6 = new LinkedNode(6, null);

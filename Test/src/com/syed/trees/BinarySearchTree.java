@@ -1,9 +1,12 @@
 package com.syed.trees;
 
+import com.sun.tools.javac.util.StringUtils;
+
 public class BinarySearchTree
 {
-    private final Node<Integer> root;
+    private Node<Integer> root;
 
+    public BinarySearchTree(){}
     public BinarySearchTree(Node<Integer> root)
     {
         this.root = root;
@@ -28,9 +31,59 @@ public class BinarySearchTree
         return result;
     }
 
+    public Node<Integer> lookUpRecursively(Node<Integer> node, int key, StringBuilder path){
+
+        if(node == null || node.value == key){
+            return node;
+        }
+
+        if(key > node.value){
+            return lookUpRecursively(node.right, key, path.append(1));
+        } else {
+            return lookUpRecursively(node.left, key, path.append(0));
+        }
+    }
+
+    public Node<Character> lookUpRecursivelyChar(Node<Character> node, Character key, StringBuilder path){
+
+        if(node == null || node.value == key){
+            return node;
+        }
+
+        if(key > node.value){
+            return lookUpRecursivelyChar(node.right, key, path.append(1));
+        } else {
+            return lookUpRecursivelyChar(node.left, key, path.append(0));
+        }
+    }
+
     public void insert(int key)
     {
         Node<Integer> curr = this.root;
+        while (true) {
+            if (curr.value == key)
+                throw new RuntimeException("Key already exists");
+            if (key > curr.value) {
+                if (curr.right != null) {
+                    curr = curr.right;
+                } else {
+                    curr.right = new Node<>(key);
+                    break;
+                }
+            } else if (key < curr.value) {
+                if (curr.left != null) {
+                    curr = curr.left;
+                } else {
+                    curr.left = new Node<>(key);
+                    break;
+                }
+            }
+        }
+    }
+
+    public void insertChar(Node<Character> curr, Character key)
+    {
+        //Node<Character> curr = this.root;
         while (true) {
             if (curr.value == key)
                 throw new RuntimeException("Key already exists");
@@ -86,7 +139,7 @@ public class BinarySearchTree
         bst.insert(2);
         bst.insert(11);
         bst.insert(15);
-        TreeTraversals.inOrder(root);
+        //TreeTraversals.inOrder(root);
         /*root.left = new NodeInt(7);
         root.left.right = new NodeInt(9);
         root.left.right.left = new NodeInt(8);
@@ -96,6 +149,25 @@ public class BinarySearchTree
         bst.deleteNode(root, 7);
         System.out.println("Found :" + result.value);
         TreeTraversals.inOrder(root);
+        StringBuilder path = new StringBuilder();
+        Node<Integer> resultForRecursion = bst.lookUpRecursively(root,8,path);
+        System.out.println("Found using recursion:" + resultForRecursion.value+ " With path "+path.toString());
+
+        Node<Character> charRoot = new Node<>('F');
+        BinarySearchTree bstChar = new BinarySearchTree();
+        bst.insertChar(charRoot,'B');
+        bst.insertChar(charRoot,'G');
+        bst.insertChar(charRoot,'A');
+        bst.insertChar(charRoot,'D');
+        bst.insertChar(charRoot,'I');
+        bst.insertChar(charRoot,'C');
+        bst.insertChar(charRoot,'E');
+        bst.insertChar(charRoot,'H');
+
+        StringBuilder pathChar = new StringBuilder();
+        Node<Character> resultForRecursionChar = bstChar.lookUpRecursivelyChar(charRoot,'C',pathChar);
+        System.out.println("Found using recursion:" + resultForRecursionChar.value+ " With path "+pathChar.toString());
+
     }
 
     public int findInorderSuccessor(Node<Integer> root)

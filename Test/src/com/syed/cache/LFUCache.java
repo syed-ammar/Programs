@@ -151,5 +151,11 @@ public class LFUCache
 
         cache.cache.entrySet().stream().
                 forEach(entry-> System.out.println("Key : "+entry.getKey()+" Value : "+entry));
+
+        DoublyLinkedNode tmp = cache.freqHead;
+        do {
+            tmp = tmp.next;
+            System.out.println("Value : "+tmp.getValue()+" Frequency : "+tmp.getFrequency()+" Keys : "+tmp.getKeys());
+        }while (tmp.next != null);
     }
 }
